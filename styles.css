@@ -1,9 +1,12 @@
 html {
   font-family: "Roboto";
   font-size: 22px;
+  background-color: aqua;
 }
 .container {
   height: 100vh;
+  border: 10px solid white;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 2fr 10fr;
@@ -34,6 +37,9 @@ html {
   border: none;
   background-color: whitesmoke;
 }
+.search-bar {
+  outline-color: skyblue;
+}
 .profile {
   display: flex;
   list-style: none;
@@ -42,17 +48,59 @@ html {
 .pfp {
   border-radius: 25px;
 }
-.profile ul,
 li {
   margin: 0px 20px;
 }
 .notification {
   border: none;
   background-color: white;
+  margin-bottom: 6px;
 }
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   grid-area: sidebar;
-  background-color: blueviolet;
+  background-color: white;
+}
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+  padding-left: 0px;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.menu:first-child {
+  margin-top: 50px;
+}
+.menu:last-child {
+  margin-bottom: 1000px !important;
+}
+.settings {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  font-size: 19px;
+}
+.settings:first-child {
+  margin-top: 100px;
 }
 .nav {
   grid-area: nav;
