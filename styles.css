@@ -1,0 +1,64 @@
+html {
+  font-family: "Roboto";
+  font-size: 22px;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 2fr 10fr;
+  grid-template-areas:
+    "sidebar header header"
+    "sidebar nav nav"
+    "sidebar hero hero";
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: header;
+  background-color: white;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search-btn {
+  background-color: white;
+  border: none;
+}
+.search-bar {
+  width: 500px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: whitesmoke;
+}
+.profile {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.pfp {
+  border-radius: 25px;
+}
+.profile ul,
+li {
+  margin: 0px 20px;
+}
+.notification {
+  border: none;
+  background-color: white;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: blueviolet;
+}
+.nav {
+  grid-area: nav;
+  background-color: yellow;
+}
+.hero {
+  grid-area: hero;
+  background-color: red;
+}
