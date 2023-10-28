@@ -168,7 +168,7 @@ li {
   display: flex;
   flex-direction: column;
   grid-area: hero;
-  background-color: white;
+  background-color: white !important;
 }
 .hero-title {
   margin-left: 50px;
@@ -190,11 +190,14 @@ li {
   margin: 0px 0px;
 }
 .projects {
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 200px;
   display: flex;
-  justify-content: space-around;
 }
 .projects ul {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  list-style: none;
 }
