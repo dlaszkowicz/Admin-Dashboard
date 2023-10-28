@@ -116,6 +116,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 0px;
 }
 .profile-2 {
   display: flex;
@@ -164,6 +165,36 @@ li {
   background-color: #ccc;
 }
 .hero {
+  display: flex;
+  flex-direction: column;
   grid-area: hero;
-  background-color: red;
+  background-color: white;
+}
+.hero-title {
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+.hero-title ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  font-size: 14px;
+}
+.hero-title ul li {
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.hero-title h2 {
+  margin: 0px 0px;
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+}
+.projects ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
