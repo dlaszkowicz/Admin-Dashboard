@@ -199,5 +199,5 @@ li {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  list-style: none;
+  list-style: none !important;
 }
