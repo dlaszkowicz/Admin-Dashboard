@@ -191,7 +191,7 @@ li {
 }
 .projects {
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-right: 200px;
   display: flex;
 }
@@ -200,4 +200,10 @@ li {
   align-items: flex-end;
   justify-content: space-between;
   list-style: none !important;
+}
+.projects ul li {
+  margin: 0px 70px;
+}
+.projects ul li:first-child {
+  margin-left: 100px;
 }
